@@ -16,12 +16,18 @@ def selection_sort( arr ):
 
     return arr
 
-print(selection_sort([1, 5, 25, 3, 7, 8, 4]))
-
 
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
-
+    swap = True
+    while swap:
+        swap = False
+        for i in range(0, len(arr) - 1):
+            if arr[i] > arr[i + 1]:
+                cur_value = arr[i]
+                arr[i] = arr[i + 1]
+                arr[i + 1] = cur_value
+                swap = True
     return arr
 
 
