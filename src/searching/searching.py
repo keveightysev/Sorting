@@ -15,10 +15,13 @@ def binary_search(arr, target):
     
   low = 0
   high = len(arr)-1
-
-  # TO-DO: add missing code
+  
+  mid = len(arr) // 2
+  print(mid)
 
   return -1 # not found
+
+print(binary_search([1, 2, 3, 4, 5], 5))
 
 
 # STRETCH: write a recursive implementation of Binary Search 
