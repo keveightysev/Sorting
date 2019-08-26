@@ -28,8 +28,6 @@ def merge_sort( arr ):
         arr = merge(left, right)
     return arr
 
-print(merge_sort([5, 3, 27, 99, 4, 100, 1, 23]))
-
 # STRETCH: implement an in-place merge sort algorithm
 def merge_in_place(arr, start, mid, end):
     # TO-DO
